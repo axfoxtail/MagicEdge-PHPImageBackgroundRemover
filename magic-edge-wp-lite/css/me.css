@@ -1,0 +1,616 @@
+
+/* MagicEdge v1.1.2 */
+
+.BR-rootHolder div{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none; 
+    user-select: none;
+}
+
+.BR-rootHolder{
+    font-family: Helvetica, Arial;
+    position:relative;
+    left:0px; 
+    right:0px;
+    min-width: 790px;
+}
+
+.BR-settingsHolder{
+    display:none;
+    border:1px solid #999;
+    margin-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    position: relative;
+}
+
+.BR-messagesHolder{
+    display:none;
+    border:1px solid #999;
+    margin-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    position: relative;
+}
+
+.BR-imagesHolder{
+    position:relative;
+    left:0px; 
+    right:0px;
+}
+
+.BR-leftImageHolder, .BR-rightImageHolder{
+    position:absolute;
+    top:0px;
+    background: white;
+    border:1px solid #999;
+}
+
+.BR-leftImageHolder{
+    left:0px;
+}
+
+.BR-rightImageHolder{
+    right:0px;
+}
+
+.BR-leftCanvasImage, .BR-leftCanvasDraw, .BR-leftCanvasCursor{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.BR-rightCanvasImage, .BR-rightCanvasDraw, .BR-rightCanvasCursor{
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.BR-modalDiv{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background: rgba(255,255,255,0.5);
+    color:black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 220px;
+    font-size: 25px;
+}
+
+.BR-commandHolder1, .BR-commandHolder2{
+    position:relative;
+    height:40px;
+    text-align:left;
+    white-space: nowrap;
+}
+
+.BR-commandHolder2Left{
+    position:absolute;
+    left:0%;
+}
+
+.BR-commandHolder2Right{
+    position:absolute;
+    left:50%;
+}
+
+.BR-commandBtn{
+    background-position: 0px 0px; 
+    background-size: 30px 30px;
+    width:30px;
+    height:30px;
+    border:1px solid rgba(0,0,0,0.5);
+    background-color: rgba(220,220,220,0.8);
+    display: inline-block;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.BR-commandInfoBtn{
+    background-position: 0px 0px; 
+    background-size: 30px 30px;
+    width:30px;
+    height:30px;
+    border:1px solid rgba(0,0,0,0.5);
+    background-color: rgba(220,220,220,0.8);
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.BR-commandInfoLabel{
+    padding: 0px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+}
+
+.BR-commandSubBtn{
+    display:block;
+
+}
+
+.BR-commandBtnArrow{
+    background-position: center center; 
+    background-size: 15px 15px;
+    width:15px;
+    height:30px;
+    border:1px solid rgba(0,0,0,0.5);
+    border-left:none;
+    background-color: rgba(220,220,220,0.8);
+    display: inline-block;
+    margin-left: 0px;
+    cursor: pointer;
+    background-image: url(images/cbarrow.png);
+    background-repeat: no-repeat;
+}
+
+.BR-commandBtn:hover, .BR-commandBtnArrow:hover {
+    box-shadow: 2px 2px 4px #888888;
+}
+
+.BR-commandBtn:active {
+    background-position: 1px 1px; 
+    box-shadow: 2px 2px 4px #888888;
+}
+
+.BR-commandBtnArrow:active {
+    box-shadow: 2px 2px 4px #888888;
+}
+
+.BR-eraserOptionsHolder, .BR-magicEdgeOptionsHolder{
+    position:absolute;
+    z-index:9999;
+}
+
+.BR-commandText{
+    font-size: 16px;
+    line-height: 30px;
+    padding-left:10px;
+    padding-right:10px;
+    width:auto;
+    vertical-align: top;
+    color:inherit;
+    text-decoration:none;
+}
+
+.BR-commandText, .BR-commandText:link , .BR-commandText:visited , .BR-commandText:hover , .BR-commandText:active {
+    color:inherit !important;
+    text-decoration:none !important;
+}
+
+.BR-commandDownloadImage{
+    display:none;
+}
+
+.BR-commandSaveImage{
+    display:none;
+}
+.BR-commandSubInner{
+    position: absolute;
+    line-height: 14px;
+    padding: 1px;
+    font-size: 13px;
+}
+.BR-commandCrop{
+    margin-left: 15px;
+    background-image: url(images/crop.png);
+    border-right:none;
+}
+.BR-commandAutoCrop, .BR-commandManualCrop{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-left: none;
+    background-color: rgba(220,220,220,0.8);
+    display: inline-block;
+    margin-left: 0px;
+}
+.BR-commandManualCrop{
+    /*border-right: none;*/
+}
+
+.BR-commandEraser{
+    margin-left: 15px;
+    background-image: url(images/eraser.png);
+}
+
+.BR-commandEraser1, .BR-commandEraser2, .BR-commandEraser3, .BR-commandEraser4, .BR-commandEraser5, .BR-commandEraser10{
+    background-position: center center; 
+    background-image: url(images/eraser.png);
+    background-repeat:no-repeat;
+}
+
+.BR-commandEraser1:active, .BR-commandEraser2:active, .BR-commandEraser3:active, .BR-commandEraser4:active, .BR-commandEraser5:active, .BR-commandEraser10:active{
+    background-position: center center !important; 
+}
+
+.BR-commandEraser1{
+    background-size: 10px 10px;
+}
+
+.BR-commandEraser2{
+    background-size: 15px 15px;
+}
+
+.BR-commandEraser3{
+    background-size: 20px 20px;
+}
+
+.BR-commandEraser4{
+    background-size: 25px 25px;
+}
+
+.BR-commandEraser5{
+    background-size: 30px 30px;
+}
+
+.BR-commandEraser10{
+    background-size: 35px 35px;
+}
+
+.BR-eraserSizeLabel, .BR-magicEdgeSizeLabel{
+    position:absolute;
+    font-size:10px;
+    line-height:10px;
+}
+
+.BR-autoCropCB{
+    margin:1px;
+}
+
+.BR-commandUndo{
+    margin-left: 15px;
+    background-image: url(images/undo.png);
+}
+
+.BR-commandRedo{
+    background-image: url(images/redo.png);
+}
+
+.BR-disabledBtn{
+    opacity:0.3;
+}
+
+.BR-commandZoomIn{
+    background-image: url(images/zoom-in.png);
+}
+
+.BR-commandZoomOut{
+    background-image: url(images/zoom-out.png);
+}
+
+.BR-commandMove{
+    margin-left: 15px;
+    background-image: url(images/hand.png);
+}
+
+.BR-commandMagicEdge{
+    background-image: url(images/magicEdge.png);
+}
+
+.BR-commandMagicEdge1, .BR-commandMagicEdge2, .BR-commandMagicEdge3{
+    background-position: center center; 
+    background-image: url(images/magicEdge.png);
+    background-repeat:no-repeat;
+}
+
+.BR-commandMagicEdge1:active, .BR-commandMagicEdge2:active, .BR-commandMagicEdge3:active{
+    background-position: center center !important; 
+}
+
+.BR-commandMagicEdge1{
+    background-size: 20px 20px;
+}
+
+.BR-commandMagicEdge2{
+    background-size: 25px 25px;
+}
+
+.BR-commandMagicEdge3{
+    background-size: 30px 30px;
+}
+
+.BR-commandSelectForeground{
+    background-image: url(images/foreground.png);
+}
+
+.BR-commandSelectBackground{
+    background-image: url(images/background.png);
+}
+
+.BR-commandSelectForegroundLine{
+    background-image: url(images/foregroundLine.png);
+}
+
+.BR-commandSelectBackgroundLine{
+    background-image: url(images/backgroundLine.png);
+}
+
+.BR-commandRemoveDrawing{
+    margin-left: 15px;
+    background-image: url(images/removeDrawing.png);
+}
+
+.BR-commandMove{
+    margin-left: 15px;
+    background-image: url(images/hand.png);
+}
+
+.BR-commandMagicWand{
+    background-image: url(images/magicWand.png);
+}
+
+.BR-commandExtraMagicWand{
+    background-image: url(images/extraMagicWand.png);
+}
+
+.BR-commandMagicWandPropsHolder{
+    width:57px;
+    height:30px;
+    border:1px solid rgba(220,220,220,0.8);
+    background-color: rgba(220,220,220,0.8);
+    display: inline-block;
+    margin-left: 0px;
+    cursor: pointer;
+    position:relative;
+}
+
+.BR-commandMagicWandPropLabel1, .BR-commandMagicWandPropLabel2{
+    position: absolute;
+    font-size:12px;
+    line-height: 15px;
+    height:18px;
+    cursor:default;
+}
+
+.BR-commandMagicWandPropLabel1{
+    top:0px;
+    left:0px;
+}
+
+.BR-commandMagicWandPropLabel2{
+    top:16px;
+    left:0px;
+}
+
+.BR-commandMagicWandPropTolerance, .BR-commandMagicWandPropBorderWidth{
+    position: absolute;
+    font-size:11px;
+    line-height: 11px;
+    height:14px;
+    width:32px;
+    padding:0px;
+    margin:	0px !important;
+    border:0px solid white !important;
+    text-align:left;
+    padding: 0px !important;
+    padding-left:2px  !important;
+}
+
+.BR-commandMagicWandPropTolerance{
+    top:0px;
+    left:22px;
+}
+
+.BR-commandMagicWandPropBorderWidth{
+    top:16px;
+    left:22px;
+}
+
+.BR-commandManualCropPropsHolder{
+    width:120px;
+    height:30px;
+    border:1px solid rgba(220,220,220,0.8);
+    background-color: rgba(220,220,220,0.8);
+    display: inline-block;
+    margin-left: 0px;
+    cursor: pointer;
+    position:relative;
+}
+
+.BR-commandManualCropPropLabel1, .BR-commandManualCropPropLabel2, .BR-commandManualCropPropLabel3, .BR-commandManualCropPropLabel4{
+    position: absolute;
+    font-size:12px;
+    line-height: 15px;
+    height:18px;
+    cursor:default;
+}
+
+.BR-commandManualCropPropLabel1{
+    top:0px;
+    left:0px;
+}
+
+.BR-commandManualCropPropLabel2{
+    top:16px;
+    left:0px;
+}
+
+.BR-commandManualCropPropLabel3{
+    top:0px;
+    left:58px;
+}
+
+.BR-commandManualCropPropLabel4{
+    top:16px;
+    left:58px;
+}
+
+.BR-commandManualCropPropX, .BR-commandManualCropPropY, .BR-commandManualCropPropW, .BR-commandManualCropPropH{
+    position: absolute;
+    font-size:11px;
+    line-height: 11px;
+    height:14px;
+    width:45px;
+    padding:0px;
+    margin:	0px !important;
+    border:0px solid white !important;
+    text-align:left;
+    padding: 0px !important;
+    padding-left:2px  !important;
+}
+
+.BR-commandManualCropPropX{
+    top:0px;
+    left:10px;
+}
+
+.BR-commandManualCropPropY{
+    top:16px;
+    left:10px;
+}
+
+.BR-commandManualCropPropW{
+    top:0px;
+    left:72px;
+}
+
+.BR-commandManualCropPropH{
+    top:16px;
+    left:72px;
+}
+
+.BR-commandPreviewTransparent{
+    background-image:  url(images/previewTransparent.png);
+    float:right;
+}
+
+.BR-commandPreviewEdgeMask{
+    background-image: url(images/previewEdgeMask.png);
+    float:right;
+}
+
+.BR-commandPreviewEdge{
+    background-image: url(images/previewEdge.png);
+    float:right;
+}
+
+.BR-commandBorderMover{
+    background-image: url(images/borderMover.png);
+}
+
+.BR-commandResizeHorizontalLeft, .BR-commandResizeHorizontalRight {
+    float:right;
+    background-image: url(images/resizeHorizontal.png);
+    display:none;
+}
+
+.BR-commandResizeHorizontalOpositeLeft, .BR-commandResizeHorizontalOpositeRight{
+    float:right;
+    background-image: url(images/resizeHorizontalOposite.png);
+}
+
+.BR-cursorPAN{
+    cursor: url(images/handIcon.png) 15 15, auto;  
+}
+
+.BR-cursorFGPOLY, .BR-cursorFGLINE{
+    cursor: url(images/greenDot10.png) 4 4, auto;  
+}
+
+.BR-cursorBGPOLY, .BR-cursorBGLINE{
+    cursor: url(images/redDot10.png) 5 5, auto;  
+}
+
+.BR-cursorMAGICWAND{
+    cursor: url(images/magicWandCursor.png) 17 17, auto; 
+}
+
+.BR-cursorEXTRAMAGICWAND{
+    cursor: url(images/extraMagicWandCursor.png) 17 17, auto;  
+}
+
+.BR-cursorMAGICEDGE{
+    cursor: none;  
+}
+
+.BR-cursorEDGEMOVER{
+    cursor: none;  
+}
+
+.BR-cursorERASER{
+    cursor: none;  
+}
+
+.BR-commandSelectImage{
+    /*margin-left: 15px;*/
+}
+
+.BR-commandConvert{
+    margin-left: 15px;
+}
+
+.BR-commandEdgeHolder{
+    vertical-align: top;
+    display: inline-block;
+    position:relative;
+}
+
+.BR-commandEdgeSelect{
+
+}
+
+.BR-edgeLabel{
+    position:absolute;
+    right:4px;
+    top:-10px;
+    z-index: 10;
+    font-size:10px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.BR-commandPreviewCustom{
+    margin-left:4px;
+    background-image: url(images/color.png);
+    background-color: white;
+    float:right;
+}
+
+.BR-colorPickerHolder{
+    display: inline-block;
+    position:relative;
+    float:right;
+    margin-top:35px;
+    margin-left:0px;
+}
+
+.BR-colorPicker{
+    position:absolute;
+    margin-left: -78px;
+    z-index: 9999;
+    width: 200px;
+    height:200px;
+}
+
+.BR-settingsInput{
+    width:500px;
+}
+
+.BR-dropInfo{
+    display:none;
+    pointer-events:none;
+    cursor:default;
+    text-align: center;
+    padding:30px;
+    line-height: 60px;
+    font-size:25px;
+    top:0px;
+    left:0px;
+    position:absolute;
+    border:5px lightgray dashed;
+    color:gray;
+}
+
+.BR-dropInfoEnter{
+    border:5px #00EE00 dashed;
+    color:#00EE00;
+    background: rgba(0,240,0,0.1);
+}

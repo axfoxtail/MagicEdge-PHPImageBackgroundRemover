@@ -1,0 +1,22 @@
+
+/* MagicEdge WP v1.1.2 */
+
+.BR-commandEdgeSelect, .BR-commandFeatherSelect {
+    vertical-align: top !important;
+    margin-top:0px !important;
+    padding-bottom:0px !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    height:32px !important;
+    /*margin-left: 15px !important;*/
+}
+
+.BR-commandMagicWandPropTolerance, .BR-commandMagicWandPropBorderWidth{
+    padding: 0px !important;
+    padding-left:2px  !important;
+    width:34px !important;
+}
+
+.BR-messagesHolder table, .BR-messagesHolder td, .BR-messagesHolder th{
+    border: 0px solid white !important;
+}
