@@ -67,4 +67,4 @@ version 1.0.2
 version 1.0.1
 
 - Output filename extension fixed
-- Added option for both Save and Download buttons  ( saveAction: “both” )
+- Added option for both Save and Download buttons  ( saveAction: "both" )
