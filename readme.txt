@@ -10,8 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 
 Magic Edge Lite - Image Background Remover provide easy way to remove background from complex photo.
-It’s unbelievable easy to use. Just in several steps your photo became transparent.
-Also, this is a first and only one photo background remover plugin for the WordPress – on the whole market! 
+It's unbelievable easy to use. Just in several steps your photo became transparent.
+Also, this is a first and only one photo background remover plugin for the WordPress, on the whole market! 
 
 Videos:
 
