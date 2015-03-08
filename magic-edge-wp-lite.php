@@ -5,7 +5,7 @@
   URI: http://www.awssoft.com/magic-edge/
   Description: Image Background Remover provide easy way to remove background from complex photo.
   Author: Srdjan Arsic
-  Version: 1.1.5
+  Version: 1.1.6
   Author URI: http://www.awssoft.com/
  */
 

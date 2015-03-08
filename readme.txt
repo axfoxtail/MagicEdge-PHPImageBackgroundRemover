@@ -3,7 +3,7 @@ Contributors: awssoft
 Tags: background, background remove, background subtract, ecommerce, image, picture
 Requires at least: 3.5
 Tested up to: 4.1.1
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

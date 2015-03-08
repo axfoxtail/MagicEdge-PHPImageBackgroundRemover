@@ -138,8 +138,8 @@ var WPBRApplication = function () {
         }
 
         //this.brApplication.workerPath = BG_REM_GLOBAL.pluginUrl+"/magic-edge/js/me-worker.js";
-        this.brApplication.transparentBgPatern = BG_REM_GLOBAL.pluginUrl + "/magic-edge-wp-lite/images/transparentBackground.png";
-        this.brApplication.loaderIcon = BG_REM_GLOBAL.pluginUrl + "/magic-edge-wp-lite/images/spinner.gif";
+        this.brApplication.transparentBgPatern = BG_REM_GLOBAL.pluginUrl + "/magic-edge-lite-image-background-remover/images/transparentBackground.png";
+        this.brApplication.loaderIcon = BG_REM_GLOBAL.pluginUrl + "/magic-edge-lite-image-background-remover/images/spinner.gif";
 
         this.addHandlers();
         this.addWPCode();
