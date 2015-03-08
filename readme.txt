@@ -3,7 +3,7 @@ Contributors: awssoft
 Tags: background, background remove, background subtract, ecommerce, image, picture
 Requires at least: 3.5
 Tested up to: 4.1.1
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,10 @@ Features:
 *   Your new plugin is ready to use under Media > Magic Edge.
 
 == Changelog ==
+
+version 1.1.5
+
+- Frontend bug fixed
 
 version 1.1.1
 
