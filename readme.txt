@@ -1,5 +1,4 @@
 === Plugin Name ===
-Contributors: awssoft
 Tags: background, background remove, background subtract, ecommerce, image, picture
 Requires at least: 3.5
 Tested up to: 4.1.1
